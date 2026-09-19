@@ -1,26 +1,24 @@
-# [kanye.rest](https://kanye.rest)
+# Mitch Hedberg Jokes API
 
-A free REST API for random Kanye West quotes (Kanye as a Service).
-
-Built with [Cloudflare Workers](https://workers.cloudflare.com/).
+REST API for random Mitch Hedberg quotes
 
 ## Usage
 
-### `GET` [https://api.kanye.rest](https://api.kanye.rest)
+### `GET` /
 
 ```json
 {
-  "quote": "I feel like I'm too busy writing history to read it."
+  "quote": "I used to do drugs. I still do, but I used to, too."
 }
 ```
 
-### `GET` [https://api.kanye.rest/text](https://api.kanye.rest/text)
+### `GET` /text
 
 ```text
-The world is our office
+I order the club sandwich all the time. And I’m not even a member, man. I don’t know how I get away with it.
 ```
 
-### `GET` [https://api.kanye.rest/quotes](https://api.kanye.rest/quotes)
+### `GET` /quotes
 
 > [!WARNING]  
 > This response format may change.
@@ -28,8 +26,8 @@ The world is our office
 ```ts
 [
     ...,
-    "I leave my emojis bart Simpson color",
-    "I love sleep; it's my favorite.",
+    "I'm sick of following my dreams. I'm just gonna ask where they're going and hook up with them later.",
+    "I met the girl who works at the DoubleTree front desk. She gave me her phone number, it's zero.",
     ...,
 ]
 ```
